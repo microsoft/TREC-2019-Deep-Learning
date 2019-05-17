@@ -16,16 +16,9 @@ Certain machine learning based methods, such as methods based on deep learning a
 
 ## Deep Learning Track Tasks
 
-The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the MS-MARCO [[http://msmarco.org](http://msmarco.org)] dataset.
+The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the MS-MARCO [http://msmarco.org](http://msmarco.org)] dataset.
 
 The two tasks use the same 1000 test queries. They will also use the same form of training data with usually one positive training document per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
-
-
-# Data
-[Corpus of Documents](https://msmarco.blob.core.windows.net/msmarcoranking/fulldocs.tsv.gz)
-
-
-[Corpus of Passages](https://msmarco.blob.core.windows.net/msmarcoranking/collectiontar.gz)
 
 ### Use of external information
 
@@ -38,9 +31,13 @@ IMPORTANT NOTE: It is prohibited to use evidence from the MS-MARCO Question Answ
 ### Dataset and document collection
 
 Passage 1) corpus 8.8 million, 2) 500k training queries and qrels
+[Corpus of Passages](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)
+
 
 Document 1) corpus 3.3 million
-
+[Corpus of Documents](https://msmarco.blob.core.windows.net/msmarcoranking/fulldocs.tsv.gz)
+[Queries](https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz)
+[qrels](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.train.tsv)
 test set 1000 queries
 
 ### Passage ranking task
@@ -107,6 +104,9 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+# Terms and Conditions
+The MS MARCO datasets are intended for non-commercial research purposes only to promote advancement in the field of artificial intelligence and related areas, and is made available free of charge without extending any license or other intellectual property rights. The dataset is provided “as is” without warranty and usage of the data has risks since we may not own the underlying rights in the documents. We are not be liable for any damages related to use of the dataset. Feedback is voluntarily given and can be used as we see fit. Upon violation of any of these terms, your rights to use the dataset will end automatically.
 
 # Legal Notices
 
