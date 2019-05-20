@@ -2,8 +2,8 @@
 
 ## Timetable
 
-* May:                Website goes live with data and guidelines
-* August 30:          Submissions close
+* May 15th:                Website goes live with data and guidelines
+* August 7:          Submissions close
 * November 13-15:     TREC conference
 
 ## Introduction
@@ -41,7 +41,6 @@ Document 1) corpus 3.3 million
 test set 1000 queries
 
 ### Passage ranking task
-
 The first task focuses on passage ranking. We will have two subtasks related to this: Ranking and top-1000 re-ranking.
 
 In context of ranking, given a question, you are expected to rank passages in terms of their likelihood of containing an answer to the question. You can submit up to 1000 passages for this task.
