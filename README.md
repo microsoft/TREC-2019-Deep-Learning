@@ -78,20 +78,10 @@ We will be following a similar format as the ones used by most TREC submissions,
 
 ## Evaluation and judging
 
-We will be having two separate test sets: One test set contains 1000 queries with sparse labels directly reused from the MS-Marco dataset. More information regarding how these sparse labels were obtained can be found here.
+We will be having two separate test sets: One test set contains 1000 queries with sparse labels directly reused from the MS-Marco dataset. The same 1000 queries will be used as the test set for both the passage retrieval and document retrieval tasks. More information regarding how these sparse labels were obtained can be found at https://arxiv.org/abs/1611.09268.
 
-The same 1000 queries will be used as the test set for both the passage retrieval and document retrieval tasks. 
+As the official evaluation set, we will be using a random subset of these 1000 queries containing 50 queries that are judged by NIST assessors. For this purpose, we will be using depth pooling and construct separate pools for the passage ranking and document ranking tasks. Passages/documents in these pools will then be labelled by NIST assessors using multi-graded judgments. 
 
-
-Ranking and top-1000 reranking subtasks are in here. NIST judging resources on passages?
-
-Passage ranking and re-ranking are evaluated using the existing sparse labels.
-
-Document ranking and re-ranking are evaluated using NIST judging resources.
-
-Note NIST/Waterloo: Find a connection between passage-level labeling and document-level labeling. One example could be comparing labeling on the document set vs separate labeling on the passage set. Note that the mapping is not perfect, not every passage in our 8.8 million passages maps to a document from our 3.3 million documents. 
-
-Need estimates for #judgments. Fewer than 1000 at NIST.
 
 ## Coordinators
 
