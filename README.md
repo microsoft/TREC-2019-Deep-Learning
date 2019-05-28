@@ -31,6 +31,15 @@ IMPORTANT NOTE: It is prohibited to use evidence from the MS-MARCO Question Answ
 
 ### Dataset and document collection
 
+Type	Filename	File size	Num Records	Format
+Corpus	msmarco-docs.tsv	22 GB	          3,213,835 	tsv: docid, url, title, body
+Corpus	msmarco-docs.trec	22 GB	          3,213,835 	TREC DOC format
+Corpus	msmarco-docs-lookup.tsv	101 MB	          3,213,835 	tsv: docid, offset_trec, offset_tsv
+Train	msmarco-doctrain-queries.tsv	15 MB	              367,013 	tsv: qid, query
+Train	msmarco-doctrain-top100	1.8 GB	        36,701,116 	TREC submission: qid, "Q0", docid, rank, score, runstring
+Train	msmarco-doctrain-qrels.tsv	7.6 MB	              384,597 	TREC qrels format
+
+
 Passage 1) corpus 8.8 million, 2) 500k training queries and qrels
 [Corpus of Passages](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)
 
