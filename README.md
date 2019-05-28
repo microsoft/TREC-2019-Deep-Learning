@@ -1,8 +1,7 @@
-# TREC 2019 Deep Learning Track Guidlines
+# TREC 2019 Deep Learning Track Guidelines
 
 ## Timetable
 
-* May 24th:                Website goes live with data and guidelines
 * May 28th:         Datasets released
 * August 7:          Submissions close
 * November 13-15:     TREC conference
@@ -19,7 +18,7 @@ Certain machine learning based methods, such as methods based on deep learning a
 
 The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the MS-MARCO [http://msmarco.org](http://msmarco.org)] dataset.
 
-The two tasks use the same 1000 test queries. They also use the same form of training data with usually one positive training document per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
+The two tasks use the same test queries. They also use the same form of training data with usually one positive training document/passage per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
 
 ### Use of external information
 
@@ -30,15 +29,6 @@ When submitting runs, participants will be able to indicate what resources they 
 IMPORTANT NOTE: It is prohibited to use evidence from the MS-MARCO Question Answering task in your submission. That dataset reveals some minor details of how the MS MARCO dataset was constructed that would not be available in a real-world search engine; hence, should be avoided.
 
 ### Dataset and document collection
-
-Type	Filename	File size	Num Records	Format
-Corpus	msmarco-docs.tsv	22 GB	          3,213,835 	tsv: docid, url, title, body
-Corpus	msmarco-docs.trec	22 GB	          3,213,835 	TREC DOC format
-Corpus	msmarco-docs-lookup.tsv	101 MB	          3,213,835 	tsv: docid, offset_trec, offset_tsv
-Train	msmarco-doctrain-queries.tsv	15 MB	              367,013 	tsv: qid, query
-Train	msmarco-doctrain-top100	1.8 GB	        36,701,116 	TREC submission: qid, "Q0", docid, rank, score, runstring
-Train	msmarco-doctrain-qrels.tsv	7.6 MB	              384,597 	TREC qrels format
-
 
 Passage 1) corpus 8.8 million, 2) 500k training queries and qrels
 [Corpus of Passages](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)
@@ -63,7 +53,7 @@ Similar to the passage ranking task, the document ranking task also has a full r
 
 In the full ranking subtask, you are expected to rank documents based on their relevance to the question, where documents can be retrieved from the full document collection provided. You can submit up to 1000 documents for this task.
 
-In the re-ranking subtask, we will be providing you with an initial ranking of 50 documents and you are expected to re-rank these documents in terms of their relevance to the question.
+In the re-ranking subtask, we will be providing you with an initial ranking of 100 documents and you are expected to re-rank these documents in terms of their relevance to the question.
 
 ## Submission instructions
 
@@ -87,10 +77,9 @@ We will be following a similar format as the ones used by most TREC submissions,
 
 ## Evaluation and judging
 
-We will be having two separate test sets: One test set contains 1000 queries with sparse labels directly reused from the MS-Marco dataset. The same 1000 queries will be used as the test set for both the passage retrieval and document retrieval tasks. More information regarding how these sparse labels were obtained can be found at https://arxiv.org/abs/1611.09268.
+As the official evaluation set, we will be using a set of 50 or more queries that are judged by NIST assessors. For this purpose, we will be using depth pooling and construct separate pools for the passage ranking and document ranking tasks. Passages/documents in these pools will then be labelled by NIST assessors using multi-graded judgments. The same set of queries will be used as the test set for both the passage retrieval and document retrieval tasks.
 
-As the official evaluation set, we will be using a random subset of these 1000 queries containing 50 queries that are judged by NIST assessors. For this purpose, we will be using depth pooling and construct separate pools for the passage ranking and document ranking tasks. Passages/documents in these pools will then be labelled by NIST assessors using multi-graded judgments. 
-
+We may be making a superset of this official query set publicly available before the judgements for the official query set is available. The queries in this superset will be sparsaley labelled, where the labels are directly reused from the MS-Marco dataset. More information regarding how these sparse labels were obtained can be found at https://arxiv.org/abs/1611.09268.
 
 ## Coordinators
 
