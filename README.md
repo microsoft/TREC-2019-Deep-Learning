@@ -16,7 +16,7 @@ Certain machine learning based methods, such as methods based on deep learning a
 
 ## Deep Learning Track Tasks
 
-The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the MS-MARCO [http://msmarco.org](http://msmarco.org)] dataset.
+The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the [MS-MARCO](http://msmarco.org) dataset.
 
 The two tasks use the same test queries. They also use the same form of training data with usually one positive training document/passage per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
 
