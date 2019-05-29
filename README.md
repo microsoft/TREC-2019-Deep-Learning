@@ -28,17 +28,29 @@ When submitting runs, participants will be able to indicate what resources they 
 
 IMPORTANT NOTE: It is prohibited to use evidence from the MS-MARCO Question Answering task in your submission. That dataset reveals some minor details of how the MS MARCO dataset was constructed that would not be available in a real-world search engine; hence, should be avoided.
 
-### Dataset and document collection
+### Datasets
+
+This year we have a document ranking dataset and a passage ranking dataset. The two datasets will share the same test set of queries, which will be released later.
+
+#### Document ranking dataset
+
+| Type   | Filename                                                                                                              | File size |              Num Records | Format                                                         |
+|--------|-----------------------------------------------------------------------------------------------------------------------|----------:|-------------------------:|----------------------------------------------------------------|
+| Corpus | [msmarco-docs.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docs.tsv.gz)                          |     22 GB |               3,213,835  | tsv: docid, url, title, body                                   |
+| Corpus | [msmarco-docs.trec](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docs.trec.gz)                        |     22 GB |               3,213,835  | TREC DOC format (same content as msmarco-docs.tsv)                                               |
+| Corpus | [msmarco-docs-lookup.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docs-lookup.tsv.gz)            |    101 MB |               3,213,835  | tsv: docid, offset_trec, offset_tsv                            |
+| Train  | [msmarco-doctrain-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctrain-queries.tsv.gz)  |     15 MB |                 367,013  | tsv: qid, query                                                |
+| Train  | [msmarco-doctrain-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctrain-top100.gz)            |    1.8 GB |              36,701,116  | TREC submission: qid, "Q0", docid, rank, score, runstring      |
+| Train  | [msmarco-doctrain-qrels.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctrain-qrels.tsv.gz)      |    7.6 MB |                 384,597  | TREC qrels format                                              |
+| Train  | [msmarco-doctriples.py](https://github.com/microsoft/TREC-2019-Deep-Learning/blob/master/utils/msmarco-doctriples.py) |         - |                       -  | Python script generates training triples |
+| Dev    | [msmarco-docdev-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-queries.tsv.gz)      |    216 KB |                   5,193  | tsv: qid, query                                                |
+| Dev    | [msmarco-docdev-top100.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-top100.tsv.gz)        |       tbd |                     tbd  | TREC submission: qid, "Q0", docid, rank, score, runstring      |
+| Dev    | [msmarco-docdev-qrels.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-qrels.tsv.gz)          |    112 KB |                   5,478  | TREC qrels format                                              |
+
+#### Passage ranking dataset
 
 Passage 1) corpus 8.8 million, 2) 500k training queries and qrels
 [Corpus of Passages](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)
-
-
-Document 1) corpus 3.3 million
-[Corpus of Documents](https://msmarco.blob.core.windows.net/msmarcoranking/fulldocs.tsv.gz)
-[Queries](https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz)
-[qrels](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.train.tsv)
-test set 1000 queries
 
 ### Passage ranking task
 The first task focuses on passage ranking. We have two subtasks related to this: Full ranking and top-1000 re-ranking.
