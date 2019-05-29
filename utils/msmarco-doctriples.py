@@ -4,8 +4,6 @@ import gzip
 import os
 from collections import defaultdict
 
-os.chdir("e:/nickcr/msmarco/msmarcodoc")
-
 # The query string for each topicid is querystring[topicid]
 querystring = {}
 with gzip.open("msmarco-doctrain-queries.tsv.gz", 'rt', encoding='utf8') as f:
@@ -22,7 +20,7 @@ with gzip.open("msmarco-docs-lookup.tsv.gz", 'rt', encoding='utf8') as f:
 
 # For each topicid, the list of positive docids is qrel[topicid]
 qrel = {}
-with gzip.open("msmarco-doctrain-qrels.tsv", 'rt', encoding='utf8') as f:
+with gzip.open("msmarco-doctrain-qrels.tsv.gz", 'rt', encoding='utf8') as f:
     tsvreader = csv.reader(f, delimiter="\t")
     for [topicid, _, docid, rel] in tsvreader:
         assert rel == "1"
@@ -62,7 +60,7 @@ def generate_triples(outfile, triples_to_generate):
     already_done_a_triple_for_topicid = -1
 
     with gzip.open("msmarco-doctrain-top100.gz", 'rt', encoding='utf8') as top100f, \
-            open("e:/nickcr/msmarco/fulldocs.tsv", encoding="utf8") as f, \
+            open("msmarco-docs.tsv", encoding="utf8") as f, \
             open(outfile, 'w', encoding="utf8") as out:
         for line in top100f:
             [topicid, _, unjudged_docid, rank, _, _] = line.split()
