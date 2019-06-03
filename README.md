@@ -55,16 +55,16 @@ This passage dataset is based on the public MS MARCO dataset, although our evalu
 
 | Description                                           | Filename                                                                                                                | File size |                        Num Records |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------:|-----------------------------------:|
-| Collection(10/26/2018)                                | [collection.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)                             |    2.9 GB |                         8,841,823  |
-| Queries(11/13/2018)                                   | [queries.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz)                                   |   42.0 MB |                         1,010,916  |
-| Qrels Dev(11/28/2018)                                 | [qrels.dev.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.dev.tsv)                                     |    1.1 MB |                            59,273  |
-| Qrels Train(11/28/2018)                               | [qrels.train.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.train.tsv)                                 |   10.1 MB |                           532,761  |
-| Queries, Passages, and Relevance   Labels(05/03/2019) | [collectionandqueries.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz)         |    2.9 GB |                        10,406,754  |
-| Train Triples Small(05/03/2019)                       | [triples.train.small.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.small.tar.gz)           |   27.1 GB |                        39,782,779  |
-| Train Triples Large(01/02/2019)                       | [triples.train.full.tsv.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.full.tsv.gz)             |  272.2 GB |                       397,756,691  |
-| Train Triples QID PID Format(1/31/2019)               | [qidpidtriples.train.full.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/qidpidtriples.train.full.tar.gz) |    5.7 GB |                       269,919,004  |
-| Top 1000 Train(05/06/2019)                            | [top1000.train.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.train.tar.gz)                       |  175.0 GB |                       478,016,942  |
-| Top 1000 Dev(05/02/2019)                              | [top1000.dev.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.dev.tar.gz)                           |    2.4 GB |                         6,669,195  |
+| Collection                                | [collection.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz)                             |    2.9 GB |                         8,841,823  |
+| Queries                                   | [queries.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz)                                   |   42.0 MB |                         1,010,916  |
+| Qrels Dev                                 | [qrels.dev.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.dev.tsv)                                     |    1.1 MB |                            59,273  |
+| Qrels Train                               | [qrels.train.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.train.tsv)                                 |   10.1 MB |                           532,761  |
+| Queries, Passages, and Relevance   Labels | [collectionandqueries.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz)         |    2.9 GB |                        10,406,754  |
+| Train Triples Small                       | [triples.train.small.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.small.tar.gz)           |   27.1 GB |                        39,782,779  |
+| Train Triples Large                      | [triples.train.full.tsv.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.full.tsv.gz)             |  272.2 GB |                       397,756,691  |
+| Train Triples QID PID Format               | [qidpidtriples.train.full.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/qidpidtriples.train.full.tar.gz) |    5.7 GB |                       269,919,004  |
+| Top 1000 Train                            | [top1000.train.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.train.tar.gz)                       |  175.0 GB |                       478,016,942  |
+| Top 1000 Dev                              | [top1000.dev.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.dev.tar.gz)                           |    2.4 GB |                         6,669,195  |
 
 ### Passage ranking task
 The first task focuses on passage ranking. We have two subtasks related to this: Full ranking and top-1000 re-ranking.
