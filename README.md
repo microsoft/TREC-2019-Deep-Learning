@@ -2,7 +2,6 @@
 
 ## Timetable
 
-* May 28th:         Datasets released
 * August 7:          Submissions close
 * November 13-15:     TREC conference
 
@@ -19,6 +18,24 @@ Certain machine learning based methods, such as methods based on deep learning a
 The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the [MS-MARCO](http://msmarco.org) dataset.
 
 The two tasks use the same test queries. They also use the same form of training data with usually one positive training document/passage per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
+
+Below the two subtasts are described in more detail. 
+
+### Document Ranking Task
+
+The first task focuses on document ranking. We have two subtasks related to this: Full ranking and top-100 re-ranking.
+
+In the full ranking subtask, you are expected to rank documents based on their relevance to the question, where documents can be retrieved from the full document collection provided. You can submit up to 1000 documents for this task.
+
+In the re-ranking subtask, we will be providing you with an initial ranking of 100 documents (with no particular order) and you are expected to re-rank these documents in terms of their relevance to the question.
+
+
+### Passage Ranking Rask
+Similar to the document ranking task, the passage ranking task also has a full ranking and re-ranking subtasks.
+
+In context of full ranking subtask, given a question, you are expected to rank passages from the full collection in terms of their likelihood of containing an answer to the question. You can submit up to 1000 passages for this task.
+
+In context of top-1000 re-ranking subtask, we will be providing you with an initial ranking of 1000 passages and you are expected to re-rank these passages based on their likelihood of containing an answer to the question. 
 
 ### Use of external information
 
@@ -65,21 +82,6 @@ This passage dataset is based on the public MS MARCO dataset, although our evalu
 | Train Triples QID PID Format               | [qidpidtriples.train.full.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/qidpidtriples.train.full.tar.gz) |    5.7 GB |                       269,919,004  | tsv: qid, positive pid, negative pid |
 | Top 1000 Train                            | [top1000.train.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.train.tar.gz)                       |  175.0 GB |                       478,016,942  | tsv: qid, pid, query, passage |
 | Top 1000 Dev                              | [top1000.dev.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.dev.tar.gz)                           |    2.4 GB |                         6,669,195  | tsv: qid, pid, query, passage |
-
-### Passage ranking task
-The first task focuses on passage ranking. We have two subtasks related to this: Full ranking and top-1000 re-ranking.
-
-In context of full ranking subtask, given a question, you are expected to rank passages from the full collection in terms of their likelihood of containing an answer to the question. You can submit up to 1000 passages for this task.
-
-In context of top-1000 re-ranking subtask, we will be providing you with an initial ranking of 1000 passages (with no particular order) and you are expected to re-rank these passages based on their likelihood of containing an answer to the question. 
-
-### Document ranking task
-
-Similar to the passage ranking task, the document ranking task also has a full ranking and re-ranking subtasks.
-
-In the full ranking subtask, you are expected to rank documents based on their relevance to the question, where documents can be retrieved from the full document collection provided. You can submit up to 1000 documents for this task.
-
-In the re-ranking subtask, we will be providing you with an initial ranking of 100 documents and you are expected to re-rank these documents in terms of their relevance to the question.
 
 ## Submission instructions
 
