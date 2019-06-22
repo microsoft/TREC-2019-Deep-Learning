@@ -2,8 +2,9 @@
 
 ## Timetable
 
-* August 7:          Submissions close
-* November 13-15:     TREC conference
+* August 7: Submissions close
+* August 21: Optional Docker images due for the Replicable Runs Initiative
+* November 13-15: TREC conference
 
 ## Introduction
 
@@ -12,6 +13,11 @@ The Deep Learning Track studies information retrieval in a *large training data*
 Our main goal is to study what methods work best in this regime. For example, do the same methods that work on small data also work on large data? How much do methods improve when given more training data? What external data and weak supervision can be brought in to bear in this scenario, and how useful is it to combine full supervision with other forms of supervision including transfer learning?
 
 Certain machine learning based methods, such as methods based on deep learning are known to require very large datasets for training. Lack of such large scale datasets has been a limitation for developing such methods for common information retrieval tasks, such as document ranking.  One of the goals of the track is to make such large-scale datasets publicly available, which could enable the development of different machine learning architectures without being constrained by the amount of training data. Through the evaluation methodologies we release as part of the track, we also enable participants to compare the performance of their methods with other state of the art methods.
+
+Another novel aspect of this track is its involvement in the Replicable Runs Initiative (RRI), an exercise to make submissions replicable so that other teams can produce the same output.
+This exercise is completely optional, but interested participants can (in the online submission form) designate any run to be an "RRI run".
+The Docker images for replicating those runs will be due August 21 (two weeks after the run submission deadline).
+See a separate page dedicated to the [Replicable Run Initiative (RRI)](https://github.com/osirrc/trec2019-rri) for additional details, including the specification of the Docker images.
 
 ## Deep Learning Track Tasks
 
