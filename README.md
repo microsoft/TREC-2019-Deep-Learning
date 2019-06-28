@@ -21,11 +21,11 @@ See a separate page dedicated to the [Replicable Run Initiative (RRI)](https://g
 
 ## Deep Learning Track Tasks
 
-The deep learning track has two tasks: Passage ranking and document ranking. Both use a large human-generated set of training labels, from the [MS-MARCO](http://msmarco.org) dataset.
+The deep learning track has two tasks: Passage ranking and document ranking. You can submit up to three runs for each of these tasks. 
 
-The two tasks use the same test queries. They also use the same form of training data with usually one positive training document/passage per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
+Both tasks use a large human-generated set of training labels, from the [MS-MARCO](http://msmarco.org) dataset. The two tasks use the same test queries. They also use the same form of training data with usually one positive training document/passage per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
 
-Below the two subtasts are described in more detail. 
+Below the two tasks are described in more detail. 
 
 ### Document Ranking Task
 
