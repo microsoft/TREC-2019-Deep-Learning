@@ -126,7 +126,7 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 
 ### Document ranking
 
-| Document ranking filename       | Size | MD5Sum        |
+| Filename       | Bytes | md5sum        |
 |---------------------------------|----------------:|----------------------------------|
 | msmarco-docdev-qrels.tsv.gz     |           40960 | 2e00fe62ebfc29eb7ed219ba15f788c9 |
 | msmarco-docdev-queries.tsv.gz   |           94208 | ac20593d71b9c32ab2633230f9cdf10d |
@@ -140,7 +140,7 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 
 ### Passage ranking
 
-| Passage ranking filename        | Size | MD5Sum        |
+| Filename       | Bytes | md5sum        |
 |---------------------------------|----------------:|----------------------------------|
 | collection.tar.gz               |      1035010048 | 87dd01826da3e2ad45447ba5af577628 |
 | collectionandqueries.tar.gz     |      1057718272 | 31644046b18952c1386cd4564ba2ae69 |
