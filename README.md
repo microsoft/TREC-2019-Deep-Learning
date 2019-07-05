@@ -144,13 +144,11 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 |---------------------------------|----------------:|----------------------------------|
 | collection.tar.gz               |      1035010048 | 87dd01826da3e2ad45447ba5af577628 |
 | collectionandqueries.tar.gz     |      1057718272 | 31644046b18952c1386cd4564ba2ae69 |
-| fulldocs.tsv.gz                 |      8432304128 | 835c0bb9db43d980db84c49309a4a43c |
 | qidpidtriples.train.full.tar.gz |      2633560064 | 215a5204288820672f5e9451d9e202c5 |
 | qrels.dev.tsv                   |         1204224 | 9157ccaeaa8227f91722ba5770787b16 |
 | qrels.train.tsv                 |        10592256 | 733fb9fe12d93e497f7289409316eccf |
 | queries.tar.gz                  |        18882560 | c177b2795d5f2dcc524cf00fcd973be1 |
 | top1000.dev.tar.gz              |       686030848 | a909a9d5a8b00aa670b06f96100a7aa7 |
-| top1000.eval.tar.gz             |       672067584 | c5b3c44abfb50676c254a8df89c3ccc5 |
 | top1000.train.tar.gz            |     11499958272 | 4dc7b43b94c8bd64c630da9a06043cae |
 | triples.train.full.tsv.gz       |     77877731328 | 8d509d484ea1971e792b812ae4800c6f |
 | triples.train.small.tar.gz      |      7909744640 | 36e27d06e66b85957eb774b5504723a6 |
