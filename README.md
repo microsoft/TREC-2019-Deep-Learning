@@ -71,6 +71,8 @@ The document ranking dataset is based on source documents, which contained passa
 | Dev    | [msmarco-docdev-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-queries.tsv.gz)      |    216 KB |                   5,193  | tsv: qid, query                                                |
 | Dev    | [msmarco-docdev-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-top100.gz)        |       27 MB |                     519,300  | TREC submission: qid, "Q0", docid, rank, score, runstring      |
 | Dev    | [msmarco-docdev-qrels.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-qrels.tsv.gz)          |    112 KB |                   5,478  | TREC qrels format                                              |
+| Test    | [msmarco-test2019-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz)          |     12K |                   200  | tsv: qid, query                                              |
+| Test    | [msmarco-doctest2019-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctest2019-top100.gz)          |   1.1M |                  20000   | TREC qrels format                                              |
 
 #### Passage ranking dataset
 
@@ -88,8 +90,10 @@ This passage dataset is based on the public MS MARCO dataset, although our evalu
 | Train Triples QID PID Format               | [qidpidtriples.train.full.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/qidpidtriples.train.full.tar.gz) |    5.7 GB |                       269,919,004  | tsv: qid, positive pid, negative pid |
 | Top 1000 Train                            | [top1000.train.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.train.tar.gz)                       |  175.0 GB |                       478,016,942  | tsv: qid, pid, query, passage |
 | Top 1000 Dev                              | [top1000.dev.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.dev.tar.gz)                           |    2.4 GB |                         6,669,195  | tsv: qid, pid, query, passage |
+| Test    | [msmarco-test2019-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz)          |     12K |                   200  | tsv: qid, query                                              |
+| Test    | [msmarco-passagetest2019-top1000.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-passagetest2019-top1000.tsv.gz)          |     71M |                  189877   | tsv: qid, pid, query, passage                                              |
 
-## Submission instructions
+## Submission, evaluation and judging
 
 We will be following a similar format as the ones used by most TREC submissions, which is repeated below. White space is used to separate columns. The width of the columns in the format is not important, but it is important to have exactly six columns per line with at least one space between the columns.
 
@@ -107,14 +111,14 @@ We will be following a similar format as the ones used by most TREC submissions,
 * the second column is currently unused and should always be "Q0".
 * the third column is the official identifier of the retrieved passage in context of passage ranking task, and the identifier of the retrieved document in context of document ranking task.
 * the fourth column is the rank the passage/document is retrieved.
-* the fifth column shows the score (integer or floating point) that generated the ranking. This score must be in descending (non-increasing) order.
+* the fifth column shows the score (integer or floating point) that generated the ranking. This score **must** be in descending (non-increasing) order.
 * The sixth column is the ID of the run you are submitting.
 
-## Evaluation and judging
+As the official evaluation set, we provide a set of 200 queries (`msmarco-test2019-queries.tsv`), where 50 or more will be judged by NIST assessors. For this purpose, NIST will be using depth pooling and construct separate pools for the passage ranking and document ranking tasks. Passages/documents in these pools will then be labelled by NIST assessors using multi-graded judgments, allowing us to measure NDCG. The same 200 queries are used for passage retrieval and document retrieval.
 
-As the official evaluation set, we will be using a set of 50 or more queries that are judged by NIST assessors. For this purpose, we will be using depth pooling and construct separate pools for the passage ranking and document ranking tasks. Passages/documents in these pools will then be labelled by NIST assessors using multi-graded judgments. The same set of queries will be used as the test set for both the passage retrieval and document retrieval tasks.
+Besides our main evaluation using the NIST labels and NDCG, we also have sparse labels for the 200 queries, which already exist as part of the MS-Marco dataset. More information regarding how these sparse labels were obtained can be found at <https://arxiv.org/abs/1611.09268>. This allows us to calculate a secondary metric Mean Reciprocal Rank (MRR).
 
-We may be making a superset of this official query set publicly available before the judgements for the official query set is available. The queries in this superset will be sparsely labelled, where the labels are directly reused from the MS-Marco dataset. More information regarding how these sparse labels were obtained can be found at <https://arxiv.org/abs/1611.09268>.
+The main type of TREC submission is _automatic_, which means there was not manual intervention in running the test queries. This means you should not adjust your runs, rewrite the query, retrain your model, or make any other sorts of manual adjustments after you see the test queries. The ideal case is that you only look at the test queries to check that they ran properly (i.e. no bugs) then you submit your automatic runs. However, if you want to have a human in the loop for your run, or do anything else that uses the test queries to adjust your model or ranking, you can mark your run as _manual_. Manual runs are interesting, and we may learn a lot, but these are distinct from our main scenario which is a system that responds to unseen queries automatically.
 
 ## Coordinators
 
@@ -137,6 +141,8 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 | msmarco-doctrain-qrels.tsv.gz   |         2387968 | e2b108a4f79ae1be3f97c356baff2ea0 |
 | msmarco-doctrain-queries.tsv.gz |         6459392 | 4086d31a9cf2d7b69c4932609058111d |
 | msmarco-doctrain-top100.gz      |       403566592 | be32fa12eb71e93014c84775d7465976 |
+| msmarco-test2019-queries.tsv.gz |            8192 | eda71eccbe4d251af83150abe065368c |
+| msmarco-doctest2019-top100.gz   |          221184 | 91071b89dd52124057a87d53cd22028d | 
 
 ### Passage ranking
 
@@ -152,6 +158,8 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 | top1000.train.tar.gz            |     11499958272 | 4dc7b43b94c8bd64c630da9a06043cae |
 | triples.train.full.tsv.gz       |     77877731328 | 8d509d484ea1971e792b812ae4800c6f |
 | triples.train.small.tar.gz      |      7909744640 | 36e27d06e66b85957eb774b5504723a6 |
+| msmarco-test2019-queries.tsv.gz |            8192 | eda71eccbe4d251af83150abe065368c |
+| msmarco-passagetest2019-top1000.tsv.gz | 26636288 | ec9e012746aa9763c7ff10b3336a3ce1 | 
 
 ## Contributing
 
