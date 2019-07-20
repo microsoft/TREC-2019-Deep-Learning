@@ -25,7 +25,7 @@ The deep learning track has two tasks: Passage ranking and document ranking. You
 
 Both tasks use a large human-generated set of training labels, from the [MS-MARCO](http://msmarco.org) dataset. The two tasks use the same test queries. They also use the same form of training data with usually one positive training document/passage per training query. In the case of passage ranking, there is a direct human label that says the passage can be used to answer the query, whereas for training the document ranking task we transfer the same passage-level labels to document-level labels.
 
-Below the two tasks are described in more detail. 
+Below the two tasks are described in more detail.
 
 ### Document Ranking Task
 
@@ -142,7 +142,7 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 | msmarco-doctrain-queries.tsv.gz |         6459392 | 4086d31a9cf2d7b69c4932609058111d |
 | msmarco-doctrain-top100.gz      |       403566592 | be32fa12eb71e93014c84775d7465976 |
 | msmarco-test2019-queries.tsv.gz |            8192 | eda71eccbe4d251af83150abe065368c |
-| msmarco-doctest2019-top100.gz   |          221184 | 91071b89dd52124057a87d53cd22028d | 
+| msmarco-doctest2019-top100.gz   |          221184 | 91071b89dd52124057a87d53cd22028d |
 
 ### Passage ranking
 
@@ -159,13 +159,13 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 | triples.train.full.tsv.gz       |     77877731328 | 8d509d484ea1971e792b812ae4800c6f |
 | triples.train.small.tar.gz      |      7909744640 | 36e27d06e66b85957eb774b5504723a6 |
 | msmarco-test2019-queries.tsv.gz |            8192 | eda71eccbe4d251af83150abe065368c |
-| msmarco-passagetest2019-top1000.tsv.gz | 26636288 | ec9e012746aa9763c7ff10b3336a3ce1 | 
+| msmarco-passagetest2019-top1000.tsv.gz | 26636288 | ec9e012746aa9763c7ff10b3336a3ce1 |
 
 ## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+the rights to use your contribution. For details, visit <https://cla.microsoft.com.>
 
 When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
 a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
@@ -189,9 +189,9 @@ see the [LICENSE](LICENSE) file, and grant you a license to any code in the repo
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
 may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
 The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft's general trademark guidelines can be found at <http://go.microsoft.com/fwlink/?LinkID=254653.>
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Privacy information can be found at <https://privacy.microsoft.com/en-us/>
 
 Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
