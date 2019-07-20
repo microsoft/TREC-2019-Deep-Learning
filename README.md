@@ -72,7 +72,7 @@ The document ranking dataset is based on source documents, which contained passa
 | Dev    | [msmarco-docdev-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-top100.gz)        |       27 MB |                     519,300  | TREC submission: qid, "Q0", docid, rank, score, runstring      |
 | Dev    | [msmarco-docdev-qrels.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-qrels.tsv.gz)          |    112 KB |                   5,478  | TREC qrels format                                              |
 | Test    | [msmarco-test2019-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz)          |     12K |                   200  | tsv: qid, query                                              |
-| Test    | [msmarco-doctest2019-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctest2019-top100.gz)          |   1.1M |                  20000   | TREC qrels format                                              |
+| Test    | [msmarco-doctest2019-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctest2019-top100.gz)          |   1.1M |                  20000   | TREC submission: qid, "Q0", docid, rank, score, runstring       |
 
 #### Passage ranking dataset
 
