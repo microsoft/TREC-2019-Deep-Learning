@@ -13,6 +13,7 @@ The updated deadlines for submitting runs for the two tasks are as follows:
 **Passage ranking task: August 14, 2019**
 
 
+
 **Why**:
 A recent data push inadvertently introduced some formatting errors to some of the files that are part of the passage ranking dataset.
 We believe that as of last night, all the impacted files have been reverted.
@@ -20,6 +21,7 @@ We realize that TREC participants may want to update their runs based on the rev
 Therefore, after some deliberation we have decided to extend the deadline for the passage ranking task by an additional week to **August 14** to give all participants the opportunity to revise their submissions.
 The deadline for the document ranking task is unchanged and is still **August 7**.
 We sincerely apologize for any inconvenience. Please let us know if you have any questions or feedback.
+
 
 
 Sincerely,
