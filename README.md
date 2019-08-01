@@ -85,10 +85,10 @@ This passage dataset is based on the public MS MARCO dataset, although our evalu
 | Qrels Dev                                 | [qrels.dev.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.dev.tsv)                                     |    1.1 MB |                            59,273  | TREC qrels format |
 | Qrels Train                               | [qrels.train.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/qrels.train.tsv)                                 |   10.1 MB |                           532,761  | TREC qrels format |
 | Queries, Passages, and Relevance   Labels | [collectionandqueries.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz)         |    2.9 GB |                        10,406,754  | |
-| Train Triples Small                       | [triples.train.small.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.small.tar.gz)           |   27.1 GB |                        39,782,779  | tsv: query, positive passage, negative passage |
+| Train Triples Small                       | [triples.train.small.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.small.tar.gz)           |   27.1 GB |                        39,780,811  | tsv: query, positive passage, negative passage |
 | Train Triples Large                      | [triples.train.full.tsv.gz](https://msmarco.blob.core.windows.net/msmarcoranking/triples.train.full.tsv.gz)             |  272.2 GB |                       397,756,691  | tsv: query, positive passage, negative passage |
 | Train Triples QID PID Format               | [qidpidtriples.train.full.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/qidpidtriples.train.full.tar.gz) |    5.7 GB |                       269,919,004  | tsv: qid, positive pid, negative pid |
-| Top 1000 Train                            | [top1000.train.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.train.tar.gz)                       |  175.0 GB |                       478,016,942  | tsv: qid, pid, query, passage |
+| Top 1000 Train                            | [top1000.train.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.train.tar.gz)                       |  175.0 GB |                       478,002,393  | tsv: qid, pid, query, passage |
 | Top 1000 Dev                              | [top1000.dev.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.dev.tar.gz)                           |    2.5 GB |                         6,668,967  | tsv: qid, pid, query, passage |
 | Test    | [msmarco-test2019-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz)          |     12K |                   200  | tsv: qid, query                                              |
 | Test    | [msmarco-passagetest2019-top1000.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-passagetest2019-top1000.tsv.gz)          |     71M |                  189,877  | tsv: qid, pid, query, passage                                              |
@@ -132,34 +132,34 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 
 | Filename       | Bytes | md5sum        |
 |---------------------------------|----------------:|----------------------------------|
-| msmarco-docdev-qrels.tsv.gz     |           40960 | 2e00fe62ebfc29eb7ed219ba15f788c9 |
-| msmarco-docdev-queries.tsv.gz   |           94208 | ac20593d71b9c32ab2633230f9cdf10d |
-| msmarco-docdev-top100.gz        |         5705728 | ac10255edf321821b0ccd0f123037780 |
-| msmarco-docs.trec.gz            |      8501800960 | d4863e4f342982b51b9a8fc668b2d0c0 |
-| msmarco-docs.tsv.gz             |      8446275584 | 103b19e21ad324d8a5f1ab562425c0b4 |
-| msmarco-docs-lookup.tsv.gz      |        40378368 | abe791080058a3d3161b213cfea36a45 |
-| msmarco-doctrain-qrels.tsv.gz   |         2387968 | e2b108a4f79ae1be3f97c356baff2ea0 |
-| msmarco-doctrain-queries.tsv.gz |         6459392 | 4086d31a9cf2d7b69c4932609058111d |
-| msmarco-doctrain-top100.gz      |       403566592 | be32fa12eb71e93014c84775d7465976 |
-| msmarco-test2019-queries.tsv.gz |            8192 | eda71eccbe4d251af83150abe065368c |
-| msmarco-doctest2019-top100.gz   |          221184 | 91071b89dd52124057a87d53cd22028d |
+| msmarco-docdev-qrels.tsv.gz     |           40,960 | 2e00fe62ebfc29eb7ed219ba15f788c9 |
+| msmarco-docdev-queries.tsv.gz   |           94,208 | ac20593d71b9c32ab2633230f9cdf10d |
+| msmarco-docdev-top100.gz        |         5,705,728 | ac10255edf321821b0ccd0f123037780 |
+| msmarco-docs.trec.gz            |      8,501,800,960 | d4863e4f342982b51b9a8fc668b2d0c0 |
+| msmarco-docs.tsv.gz             |      8,446,275,584 | 103b19e21ad324d8a5f1ab562425c0b4 |
+| msmarco-docs-lookup.tsv.gz      |        40,378,368 | abe791080058a3d3161b213cfea36a45 |
+| msmarco-doctrain-qrels.tsv.gz   |         2,387,968 | e2b108a4f79ae1be3f97c356baff2ea0 |
+| msmarco-doctrain-queries.tsv.gz |         6,459,392 | 4086d31a9cf2d7b69c4932609058111d |
+| msmarco-doctrain-top100.gz      |       403,566,592 | be32fa12eb71e93014c84775d7465976 |
+| msmarco-test2019-queries.tsv.gz |            8,192 | eda71eccbe4d251af83150abe065368c |
+| msmarco-doctest2019-top100.gz   |          221,184 | 91071b89dd52124057a87d53cd22028d |
 
 ### Passage ranking
 
 | Filename       | Bytes | md5sum        |
 |---------------------------------|----------------:|----------------------------------|
-| collection.tar.gz               |      1035010048 | 87dd01826da3e2ad45447ba5af577628 |
-| collectionandqueries.tar.gz     |      1057718272 | 31644046b18952c1386cd4564ba2ae69 |
-| qidpidtriples.train.full.tar.gz |      2633560064 | 215a5204288820672f5e9451d9e202c5 |
-| qrels.dev.tsv                   |         1204224 | 9157ccaeaa8227f91722ba5770787b16 |
-| qrels.train.tsv                 |        10592256 | 733fb9fe12d93e497f7289409316eccf |
-| queries.tar.gz                  |        18882560 | c177b2795d5f2dcc524cf00fcd973be1 |
-| top1000.dev.tar.gz              |       687415296 | 8c140662bdf123a98fbfe3bb174c5831 |
-| top1000.train.tar.gz            |     11499958272 | 4dc7b43b94c8bd64c630da9a06043cae |
-| triples.train.full.tsv.gz       |     77877731328 | 8d509d484ea1971e792b812ae4800c6f |
-| triples.train.small.tar.gz      |      7909744640 | 36e27d06e66b85957eb774b5504723a6 |
-| msmarco-test2019-queries.tsv.gz |            8192 | eda71eccbe4d251af83150abe065368c |
-| msmarco-passagetest2019-top1000.tsv.gz | 26636288 | ec9e012746aa9763c7ff10b3336a3ce1 |
+| collection.tar.gz               |      1,035,010,048 | 87dd01826da3e2ad45447ba5af577628 |
+| collectionandqueries.tar.gz     |      1,057,718,272 | 31644046b18952c1386cd4564ba2ae69 |
+| qidpidtriples.train.full.tar.gz |      2,633,560,064 | 215a5204288820672f5e9451d9e202c5 |
+| qrels.dev.tsv                   |         1,204,224 | 9157ccaeaa8227f91722ba5770787b16 |
+| qrels.train.tsv                 |        10,592,256 | 733fb9fe12d93e497f7289409316eccf |
+| queries.tar.gz                  |        18,882,560 | c177b2795d5f2dcc524cf00fcd973be1 |
+| top1000.dev.tar.gz              |       687,415,296 | 8c140662bdf123a98fbfe3bb174c5831 |
+| top1000.train.tar.gz            |     11,519,984,492  | d99fdbd5b2ea84af8aa23194a3263052 |
+| triples.train.full.tsv.gz       |     77,877,731,328 | 8d509d484ea1971e792b812ae4800c6f |
+| triples.train.small.tar.gz      |      7,930,881,353 | c13bf99ff23ca691105ad12eab837f84 |
+| msmarco-test2019-queries.tsv.gz |            8,192 | eda71eccbe4d251af83150abe065368c |
+| msmarco-passagetest2019-top1000.tsv.gz | 26,636,288 | ec9e012746aa9763c7ff10b3336a3ce1 |
 
 ## Contributing
 
