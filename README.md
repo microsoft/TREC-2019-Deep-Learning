@@ -2,7 +2,8 @@
 
 ## Timetable
 
-* August 7: Submissions close
+* August 7: Submissions close for document ranking task
+* August 14: Submissions close for passage ranking task
 * August 21: Optional Docker images due for the Replicable Runs Initiative
 * November 13-15: TREC conference
 
