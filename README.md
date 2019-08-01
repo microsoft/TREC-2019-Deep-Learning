@@ -7,6 +7,8 @@
 * August 21: Optional Docker images due for the Replicable Runs Initiative
 * November 13-15: TREC conference
 
+(Please see recent announcement about **updated deadlines** for submitting runs for the passage ranking task: https://microsoft.github.io/TREC-2019-Deep-Learning/Updated-Deadline-Announcement)
+
 ## Introduction
 
 The Deep Learning Track studies information retrieval in a *large training data* regime. This is the case where the number of training queries with at least one positive label is at least in the tens of thousands, if not hundreds of thousands or more. This corresponds to real-world scenarios such as training based on click logs and training based on labels from shallow pools (such as the pooling in the TREC Million Query Track or the evaluation of search engines based on early precision).
