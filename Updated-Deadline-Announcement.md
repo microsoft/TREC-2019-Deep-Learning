@@ -1,8 +1,6 @@
 
 Hi Everyone,
 
-<br/>
-
 We are announcing a small update to the deadlines for the **TREC Deep Learning (DL) track**.
 The TREC DL track consists of two tasks: a document ranking task and a passage ranking task.
 Till today, the deadlines for submitting runs for both tasks were August 7, 2019.
