@@ -7,7 +7,7 @@
 * August 21: Optional Docker images due for the Replicable Runs Initiative
 * November 13-15: TREC conference
 
-( Please see recent announcement about **updated deadlines** for submitting runs for the passage ranking task: https://microsoft.github.io/TREC-2019-Deep-Learning/Updated-Deadline-Announcement )
+Please see recent announcement about **updated deadlines** for submitting runs for the passage ranking task: https://microsoft.github.io/TREC-2019-Deep-Learning/Updated-Deadline-Announcement
 
 ## Introduction
 
