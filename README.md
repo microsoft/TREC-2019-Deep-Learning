@@ -38,7 +38,7 @@ In the full ranking (retrieval) subtask, you are expected to rank documents base
 
 In the re-ranking subtask, we provide you with an initial ranking of 100 documents from a simple IR system, and you are expected to re-rank the documents in terms of their relevance to the question. This is a very common real-world scenario, since many end-to-end systems are implemented as retrieval followed by top-k re-ranking. The re-ranking subtask allows participants to focus on re-ranking only, without needing to implement an end-to-end system. It also makes those re-ranking runs more comparable, because they all start from the same set of 100 candidates.
 
-### Passage Ranking Rask
+### Passage Ranking Task
 
 Similar to the document ranking task, the passage ranking task also has a full ranking and re-ranking subtasks.
 
