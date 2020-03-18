@@ -76,6 +76,7 @@ The document ranking dataset is based on source documents, which contained passa
 | Dev    | [msmarco-docdev-qrels.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-docdev-qrels.tsv.gz)          |    112 KB |                   5,478  | TREC qrels format                                              |
 | Test    | [msmarco-test2019-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz)          |     12K |                   200  | tsv: qid, query                                              |
 | Test    | [msmarco-doctest2019-top100](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-doctest2019-top100.gz)          |   1.1M |                  20,000  | TREC submission: qid, "Q0", docid, rank, score, runstring       |
+| Test    | [2019qrels-docs](https://trec.nist.gov/data/deep/2019qrels-docs.txt)          |   331K |                  16,258  | TREC qid, "Q0", docid, rating       |
 
 #### Passage ranking dataset
 
@@ -95,6 +96,7 @@ This passage dataset is based on the public MS MARCO dataset, although our evalu
 | Top 1000 Dev                              | [top1000.dev.tar.gz](https://msmarco.blob.core.windows.net/msmarcoranking/top1000.dev.tar.gz)                           |    2.5 GB |                         6,668,967  | tsv: qid, pid, query, passage |
 | Test    | [msmarco-test2019-queries.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-test2019-queries.tsv.gz)          |     12K |                   200  | tsv: qid, query                                              |
 | Test    | [msmarco-passagetest2019-top1000.tsv](https://msmarco.blob.core.windows.net/msmarcoranking/msmarco-passagetest2019-top1000.tsv.gz)          |     71M |                  189,877  | tsv: qid, pid, query, passage                                              |
+| Test    | [2019qrels-pass.txt](https://trec.nist.gov/data/deep/2019qrels-pass.txt)          |     182K |                  9,260  | qid, "Q0", docid, rating                                              |
 
 ## Submission, evaluation and judging
 
