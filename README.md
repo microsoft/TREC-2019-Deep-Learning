@@ -155,7 +155,7 @@ Since these are large files to download, here are the size in bytes and md5sum, 
 |---------------------------------|----------------:|----------------------------------|
 | collection.tar.gz               |      1,035,010,048 | 87dd01826da3e2ad45447ba5af577628 |
 | collectionandqueries.tar.gz     |      1,057,718,272 | 31644046b18952c1386cd4564ba2ae69 |
-| qidpidtriples.train.full.tar.gz |      2,633,560,064 | 215a5204288820672f5e9451d9e202c5 |
+| qidpidtriples.train.full.2.tsv.gz |      1,841,693,309 | 219083e80a0a751c08b968c2f31a4e0b |
 | qrels.dev.tsv                   |         1,204,224 | 9157ccaeaa8227f91722ba5770787b16 |
 | qrels.train.tsv                 |        10,592,256 | 733fb9fe12d93e497f7289409316eccf |
 | queries.tar.gz                  |        18,882,560 | c177b2795d5f2dcc524cf00fcd973be1 |
